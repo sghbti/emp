@@ -1,0 +1,120 @@
+/*App*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+/* Sidebar  */
+.header{
+  height: 40%;
+  border: 1px solid black;
+}
+.ptani{
+
+    
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 88px;
+}
+#SideBar{
+   position: fixed;
+   width: 200px;
+   height: 100%;
+   margin-top:60px;
+   background-color:cadetblue; 
+   padding: 50px 10px;
+   transition: all 500ms linear;
+   left:-250px;
+  border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+#SideBar.active{
+    left:0px;
+}
+#SideBar ul li{
+list-style: none;
+}
+
+.NavigationBar{
+    box-sizing: border-box;
+    float:left;
+    display:block;
+    height: 60px;
+    width:100%;
+   background-color: aqua;
+}
+.NavigationBar>div{
+    display: grid;
+    grid-auto-rows: 10% 90%;
+}
+.ToggleButton{
+margin-top: 12px;
+height: 35px;
+width:35px;
+margin-left:15px;
+border-radius: 5px; 
+}
+
+/*App Page Content */
+.PageContent{
+    position: fixed;
+   width: 80%;
+   
+   margin-left:250px;
+   margin-top:70px; 
+  
+   border-radius: 5px;
+}
+
+/* NavigationBar Name*/
+.NaviName{
+    position: absolute;
+    margin: 0px 10px 0 840px;
+      color: cadetblue;
+      padding-right: 15px;
+    
+}
+
+.item1 { grid-area: header; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:'header header header header header header';
+  grid-gap: 10px;
+  background-color: rgb(83, 209, 223);
+  padding: 0px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align:left;
+  padding: 20px 0;
+  font-size: 30px;
+  
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(69, 151, 228);
+    color: white;
+}
